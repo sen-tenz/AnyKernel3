@@ -5,7 +5,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=DawfukProject by DawfukFR (logic) @dawfukfr
+kernel.string=Stellaris Kernel
 do.devicecheck=1
 do.modules=0
 do.systemless=1
