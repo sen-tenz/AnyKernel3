@@ -43,5 +43,7 @@ patch_vbmeta_flag=auto;
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
+vbmeta_disable_verification;
+
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
