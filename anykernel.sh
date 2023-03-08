@@ -6,20 +6,11 @@
 # begin properties
 properties() { '
 kernel.string=Stellaris Kernel
-do.devicecheck=1
+do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=instantnoodle
-device.name2=instantnoodlep
-device.name3=opkona
-device.name4=kebab
-device.name5=OnePlus8
-device.name6=OnePlus8Pro
-device.name7=OnePlus8T
-device.name8=lemonades
-device.name9=OnePlus9R
 supported.versions=
 supported.patchlevels=
 '; } # end properties
