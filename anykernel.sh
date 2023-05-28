@@ -40,6 +40,17 @@ ui_print " ";
 ui_print "Patching system's build prop for FUSE Passthrough..." 
 patch_prop /system/build.prop "persist.sys.fuse.passthrough.enable" "true" 
 
+case "$ZIPFILE" in
+    *ksu*)
+    ui_print " • Using KSU variant";
+    rm Image;
+    mv ksu/Image $home/Image;
+    ;;
+    *)
+    ui_print " • Using normal variant";
+    ;;
+esac
+
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
